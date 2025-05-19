@@ -1,0 +1,710 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 183px;
+    font-size: 4rem;
+    font-weight: 800;
+    color: #fff;
+    width: fit-content;
+    height: auto;
+    font-family:
+        "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.header-items {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    gap: 100px;
+    border-radius: 0px 0px 8px 8px;
+    background: #1b1b1b;
+    width: 80%;
+    height: 78px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.header-items a {
+    display: inline-flex;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #9c9c9c;
+    font-family: "IBM Plex Mono";
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 0.14px;
+    align-content: center;
+    justify-content: center;
+}
+
+.header-items a:hover {
+    color: white;
+}
+
+.name {
+    color: #fff;
+    font-family:
+        "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    align-self: stretch;
+    font-size: 3rem;
+    font-weight: 800;
+    margin-top: 221px !important;
+    margin-left: 180px;
+    height: auto;
+    width: fit-content;
+}
+
+.text {
+    color: #9c9c9c;
+    font-family: "IBM Plex Mono";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0.2px;
+    margin: 20px 183px;
+    text-align: center;
+    display: block;
+    width: 40%;
+    height: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    overflow: hidden;
+    text-align: left;
+}
+
+.text span {
+    color: #cfcfcf;
+    font-weight: bolder;
+}
+
+.my-photo {
+    width: 635px;
+    height: 630px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    display: flex;
+    margin-left: 57%;
+    margin-top: -400px;
+    background: url(img/lkd4-Photoroom.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.green-button {
+    display: flex;
+    padding: 21px 64px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+    border: 1px solid #0a66c2;
+    box-shadow: 0px 8px 30px 0px rgba(10, 102, 194, 0.5);
+    margin-left: 182px;
+    margin-top: -190px;
+    line-height: normal;
+    width: 550px;
+    height: 120px;
+}
+
+.green-button img {
+    width: 100%;
+    height: 90px;
+}
+
+.green-button:hover {
+    background-color: #fff;
+    transform: translateY(4px);
+}
+
+.education-container h1 {
+    color: #fff;
+    font-family:
+        "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    align-self: stretch;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-top: 50px;
+    margin-left: 0;
+    margin-bottom: 20px;
+    height: auto;
+    width: fit-content;
+}
+
+.education-container {
+    color: #9c9c9c;
+    font-family: "IBM Plex Mono";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0.2px;
+    margin: 20px 0px 20px 183px;
+    text-align: center;
+    display: block;
+    height: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    overflow: hidden;
+    text-align: left;
+    align-items: flex-start;
+}
+
+.education li h2 {
+    color: #e7e7e7;
+}
+
+.education {
+    list-style-type: disc;
+    width: 88%;
+}
+
+.education li {
+    display: flex;
+    justify-content: space-between;
+    /* Texto à esquerda, imagens à direita */
+    align-items: flex-start;
+    /* Alinha os elementos pelo topo */
+    width: 100%;
+    gap: 20px;
+}
+
+/* Container para o texto */
+.education li .text-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.education li h2 {
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.education li .text-container h2 {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Adiciona um bullet antes do <h2> */
+.education li .text-container h2::before {
+    content: "•";
+    /* Bullet (ponto) */
+    color: #e7e7e7 !important;
+    /* Cor do bullet */
+    font-size: 1.5em;
+    /* Ajusta o tamanho */
+    margin-right: 10px;
+    /* Espaço entre o bullet e o texto */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Container das imagens */
+.education li .img-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 60px;
+}
+
+/* Ajusta o tamanho das imagens */
+.education li img {
+    height: 140px;
+    max-width: 100%;
+}
+
+.touch-container {
+    color: #9c9c9c;
+    font-family: "IBM Plex Mono";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0.2px;
+    margin: 20px 0px 20px 183px;
+    text-align: center;
+    display: block;
+    height: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    overflow: hidden;
+    text-align: left;
+    align-items: flex-start;
+}
+
+.touch-container h1 {
+    color: #fff;
+    font-family:
+        "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    align-self: stretch;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-top: 50px;
+    margin-left: 0;
+    margin-bottom: 20px;
+    height: auto;
+    width: fit-content;
+}
+
+.buttons-container {
+    display: flex;
+    align-items: row;
+    align-self: center;
+    gap: 17%;
+    justify-items: space-between;
+    height: 50vh;
+    max-width: 90%;
+}
+
+.github-b {
+    height: 315px;
+    width: 315px;
+    border: 2px solid white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    box-shadow: 10px 10px 0px rgba(255, 255, 255, 1);
+}
+
+.github-b img {
+    width: 255px;
+}
+
+.github-b:hover {
+    background-color: #2dba4e;
+    transform: translateY(4px);
+}
+
+.linkedin-b {
+    height: 315px;
+    width: 315px;
+    border: 2px solid white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    box-shadow: 10px 10px 0px rgba(255, 255, 255, 1);
+}
+
+.linkedin-b img {
+    width: 255px;
+    margin-left: 16px;
+}
+
+.linkedin-b:hover {
+    background-color: #2867b2;
+    transform: translateY(4px);
+}
+
+.email-b {
+    position: relative;
+    height: 315px;
+    width: 315px;
+    border: 2px solid white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    overflow: hidden;
+    /* Garante que a imagem não ultrapasse os cantos arredondados */
+    box-shadow: 10px 10px 0px rgba(255, 255, 255, 1);
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+    /* Adiciona transição suave */
+}
+
+.email-b img {
+    width: 255px;
+    display: block;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.email-b:hover {
+    background-color: red;
+    transform: translateY(4px);
+}
+
+.skills-container {
+    color: #9c9c9c;
+    font-family: "IBM Plex Mono";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0.2px;
+    margin: 20px 0px 20px 183px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+
+.skill-box {
+    padding: 1rem;
+    cursor: pointer;
+    max-width: 60%;
+}
+
+.skill-box:hover .skill-title h3::after,
+.skill-box:hover .skill-title h3::before {
+    width: 35px;
+}
+
+.skill-box:hover .img {
+    transform: translateY(-10px);
+}
+
+.skill-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.skill-title h3 {
+    color: #fff;
+    margin: 0.7rem;
+    position: relative;
+    /* necessário para posicionar ::before/::after */
+}
+
+.skill-title h3::after,
+.skill-title h3::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    /* linha acima do h3 */
+    height: 4px;
+    width: 0;
+    /* começa invisível */
+    background-color: #0a66c2;
+    transition: width 0.1s;
+}
+
+.skill-title h3::after {
+    right: 50%;
+    border-radius: 2px 0 0 2px;
+}
+
+.skill-title h3::before {
+    left: 50%;
+    border-radius: 0 2px 2px 0;
+}
+
+.img {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    border-radius: 45px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.img:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 90px;
+}
+
+.skill-img {
+    width: 70%;
+}
+
+.Projects-container {
+    color: #9c9c9c;
+    font-family: "IBM Plex Mono";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0.2px;
+    margin: 20px 0px 20px 183px;
+    text-align: center;
+    display: grid;
+    /* Ativa o Grid */
+    grid-template-columns: repeat(3, 1fr);
+    /* Define 3 colunas de tamanhos iguais */
+    gap: 1rem;
+    /* Espaçamento entre os itens */
+    padding: 1rem;
+    /* Espaçamento interno do container */
+    height: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    overflow: hidden;
+    text-align: left;
+}
+
+.Projects-container h1 {
+    color: #fff;
+    font-family:
+        "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    align-self: stretch;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    height: auto;
+    width: fit-content;
+}
+
+.h1p {
+    margin-left: 183px;
+}
+
+.h1s {
+    margin-left: 183px;
+}
+
+.project-box {
+    cursor: pointer;
+    /* Indica que é clicável */
+    height: 600px;
+    /* Altura fixa */
+    max-width: 450px;
+    width: 100%;
+    /* Largura fixa */
+    display: grid;
+    /* Ativa o Grid */
+    grid-template-rows: 90% 10%;
+    /* Define 80% para a imagem e 20% para o título */
+    align-items: center;
+    /* Centraliza os itens verticalmente */
+    justify-items: center;
+    /* Centraliza os itens horizontalmente */
+    position: relative;
+    /* Necessário para posicionar a descrição */
+    overflow: hidden;
+    /* Garante que a descrição não ultrapasse os limites */
+    border-radius: 20px;
+    margin-left: 0px;
+    margin-bottom: 50px;
+    border: 5px solid rgb(27, 1, 56);
+    background-color: #0e0024;
+}
+
+.project-img {
+    width: 110%;
+    /* Largura total */
+    height: 110%;
+    /* Ocupa 100% da área definida pelo grid */
+    object-fit: cover;
+    /* Ajusta a imagem para preencher o espaço sem distorção */
+}
+
+.project-box h3 {
+    display: flex;
+    align-items: center;
+    /* Centraliza o texto verticalmente */
+    justify-content: flex-start;
+    /* Centraliza o texto horizontalmente */
+    font-size: 1.5rem;
+    /* Tamanho do texto */
+    font-weight: bolder;
+    /* Negrito */
+    margin-bottom: 20px;
+}
+
+.pbh3 {
+    color: white;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    padding: 0.5rem;
+    font-weight: bolder;
+    margin-top: 8%;
+}
+
+.pbh3:hover {
+    opacity: 0;
+    transition: opacity 0.1s;
+}
+
+.project-box:hover .pbh3 {
+    opacity: 0;
+    /* Torna o elemento invisível */
+    transition: opacity 0.1s;
+    /* Transição suave */
+}
+
+.project-description {
+    text-align: center;
+    /* Centraliza o texto */
+    height: 100%;
+    /* Ocupa toda a altura do .project-box */
+    width: 100%;
+    /* Ocupa toda a largura do .project-box */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Fundo preto semi-transparente */
+    color: white;
+    /* Cor do texto */
+    padding: 1rem;
+    /* Espaçamento interno */
+    position: absolute;
+    /* Posiciona sobre a imagem */
+    top: 0;
+    /* Começa no topo */
+    left: 0;
+    /* Começa na esquerda */
+    opacity: 0;
+    /* Invisível por padrão */
+    transition: opacity 0.3s ease;
+    /* Transição suave */
+    display: flex;
+    /* Layout flexível */
+    flex-direction: column;
+    /* Alinha os elementos verticalmente */
+    justify-content: center;
+    /* Centraliza o conteúdo verticalmente */
+    align-items: center;
+    /* Centraliza o conteúdo horizontalmente */
+}
+
+.project-box:hover .project-description {
+    opacity: 1;
+    /* Torna visível ao passar o mouse */
+}
+
+.experience-container {
+    color: #9c9c9c;
+    font-family: "IBM Plex Mono";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0.2px;
+    margin: 20px 0px 20px 183px;
+    text-align: center;
+    display: block;
+    height: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    overflow: hidden;
+    text-align: left;
+    align-items: flex-start;
+}
+
+.experience-container h1 {
+    color: #fff;
+    font-family:
+        "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    align-self: stretch;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    height: auto;
+    width: fit-content;
+}
+
+.experience-content h3 {
+    color: #e7e7e7;
+    font-family: "IBM Plex Mono";
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: bolder;
+    line-height: 1.3;
+    letter-spacing: 0.2px;
+    margin: 20px 0px 10px 183px;
+    text-align: center;
+    display: block;
+    height: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    overflow: hidden;
+    text-align: left;
+    align-items: flex-start;
+    text-decoration: underline;
+}
+
+.experience-content p {
+    max-width: 670px;
+    color: #9c9c9c;
+    font-family: "IBM Plex Mono";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0.2px;
+    margin: 0px 0px 20px 183px;
+    text-align: center;
+    display: block;
+    height: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    overflow: hidden;
+    text-align: left;
+    align-self: center;
+    align-items: center;
+}
+
+.experience-content p span {
+    font-weight: bolder;
+    color: #fff;
+}
+
+.experience-container h1,
+.touch-container h1,
+.skills-container h1,
+.education-container h1 {
+    margin-top: 50px;
+}
