@@ -439,6 +439,11 @@ h1 {
     border-radius: 0 2px 2px 0;
 }
 
+.skill-img[src="../img/58480979cef1014c0b5e4901.png"] {
+    width: 45px;
+    height: auto;
+}
+
 .img {
     width: 90px;
     height: 90px;
